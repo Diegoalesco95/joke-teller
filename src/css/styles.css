@@ -15,7 +15,7 @@ html {
 
 body {
   align-items: center;
-  background-color: #ffffff;
+  background-color: #d0ccfd;
   color: black;
   display: flex;
   font-family: 'Montserrat', sans-serif;
@@ -31,4 +31,58 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+/* classes */
+
+.container {
+  align-items: center;
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background: url(../assets/images/bb8.gif);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+button {
+  background: #f9b13e;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0.2rem 0.2rem 2rem 1rem rgba(0,0,0,0.2);
+  color: white;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-size:  2rem;
+  height: 5rem;
+  width: 20rem;
+}
+
+button:hover {
+  filter: brightness(95%)
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+button:disabled {
+  cursor: default;
+  filter: brightness(30%);
+}
+
+/* Media querie */
+
+@media screen and (max-width: 1000px) {
+  .container {
+    background-size: cover;
+    background-position: center center;
+  }
+
+  button {
+    box-shadow: 0.5rem 0.5rem 3rem 2rem rgba(0,0,0,0.5);
+  }
 }
